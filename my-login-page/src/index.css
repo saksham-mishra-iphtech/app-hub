@@ -1,4 +1,6 @@
-:root {
+@import "tailwindcss";
+
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -11,5 +13,44 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+} */
+/* Hide scrollbar for WebKit browsers */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
-@import "tailwindcss";
+
+/* Hide scrollbar for Firefox */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+/* Prevent unwanted scrolling issues */
+html, body {
+  overflow-x: hidden;
+  width:100%
+}
+
+
+
+/* Prevent unwanted scrolling & extra space */
+html, body {
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Ensure proper overflow management */
+.zoomed-image-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 50;
+  width: 100%;
+  max-width: 1400px;
+  height: 100%;
+  overflow: hidden;
+}

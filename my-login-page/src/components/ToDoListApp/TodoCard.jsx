@@ -184,9 +184,9 @@ const TodoCard = () => {
   const [menuVisible, setMenuVisible] = useState(null);
 
   return (
-    <div className="h-full w-screen min-h-screen overflow-x-hidden overflow-scroll p-2 flex flex-col items-center">
+    <div className=" h-full 2xl:px-26 w-screen  min-h-screen overflow-x-hidden overflow-scroll mt-13 md:px-9 flex flex-col items-center">
       <div
-        className={`w-full pb-[30px] ${
+        className={`w-full pb-[30px] mt-1 ${
           tasks.length === 0
             ? "flex justify-center items-center"
             : "grid grid-cols-1 px-5 mt-2 sm:grid-cols-2 sm:px-10 lg:grid-cols-3 lg:px-10 xl:grid-cols-4 xl:px-30 gap-3 2xl:grid-cols-5"
@@ -195,7 +195,7 @@ const TodoCard = () => {
         {tasks.map((box) => (
           <div
             key={box.id}
-            className="w-full sm:w-72 min-h-[300px] p-4 flex flex-col items-center rounded-lg shadow-md relative bg-[#ffd4a9]"
+            className="w-full sm:w-70 min-h-[300px] p-4 flex flex-col items-center rounded-lg shadow-md relative bg-[#ffd4a9] "
           >
             <div className="text-center w-full relative">
               <div className="flex items-center justify-between w-full">
@@ -292,3 +292,4 @@ const TodoCard = () => {
 };
 
 export default TodoCard;
+

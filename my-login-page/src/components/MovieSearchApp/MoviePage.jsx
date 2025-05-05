@@ -47,9 +47,9 @@ const MoviePage = () => {
   };
 
   return (
-    <div className="relative pt-24">
+    <div className="relative md:pt-11 px-auto mx-auto mt-5 ">
       <MovieHeader setCategory={setCategory} setSearchQuery={setSearchQuery} />
-      <div className="mt-40 pt-10 mx-3 px-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:mt-11 gap-4">
+      <div className="mt-40 pt-10 mx-3 px-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 lg:mt-11 gap-4">
         {movies.length > 0 ? (
           movies.map((movie) => (
             <MovieCard
